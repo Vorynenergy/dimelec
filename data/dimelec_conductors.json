@@ -1,0 +1,1108 @@
+{
+  "_version": "v5",
+  "_fuentes": [
+    "NEC 2023 Tabla 310.15(B)(16)",
+    "IEC 60502-1:2004",
+    "IEC 60228:2004"
+  ],
+  "_nota": "R_ac a 75°C en Ω/km. X inductiva en Ω/km. Ampacidad base a 30°C, tubería conduit.",
+  "BT_AWG": [
+    {
+      "cal": "14 AWG",
+      "s": 2.08,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 20,
+      "r_ac": 8.286,
+      "x": 0.118,
+      "peso_kg_km": 18.5
+    },
+    {
+      "cal": "12 AWG",
+      "s": 3.31,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 25,
+      "r_ac": 5.211,
+      "x": 0.113,
+      "peso_kg_km": 29.5
+    },
+    {
+      "cal": "10 AWG",
+      "s": 5.26,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 35,
+      "r_ac": 3.277,
+      "x": 0.108,
+      "peso_kg_km": 46.8
+    },
+    {
+      "cal": "8 AWG",
+      "s": 8.37,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 50,
+      "r_ac": 2.061,
+      "x": 0.102,
+      "peso_kg_km": 74.5
+    },
+    {
+      "cal": "6 AWG",
+      "s": 13.3,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 65,
+      "r_ac": 1.296,
+      "x": 0.095,
+      "peso_kg_km": 118.4
+    },
+    {
+      "cal": "4 AWG",
+      "s": 21.2,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 85,
+      "r_ac": 0.815,
+      "x": 0.092,
+      "peso_kg_km": 188.7
+    },
+    {
+      "cal": "2 AWG",
+      "s": 33.6,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 115,
+      "r_ac": 0.513,
+      "x": 0.085,
+      "peso_kg_km": 299.3
+    },
+    {
+      "cal": "1 AWG",
+      "s": 42.4,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 130,
+      "r_ac": 0.406,
+      "x": 0.083,
+      "peso_kg_km": 377.6
+    },
+    {
+      "cal": "1/0 AWG",
+      "s": 53.5,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 150,
+      "r_ac": 0.322,
+      "x": 0.082,
+      "peso_kg_km": 476.5
+    },
+    {
+      "cal": "2/0 AWG",
+      "s": 67.4,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 175,
+      "r_ac": 0.255,
+      "x": 0.079,
+      "peso_kg_km": 600.0
+    },
+    {
+      "cal": "3/0 AWG",
+      "s": 85.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 200,
+      "r_ac": 0.202,
+      "x": 0.077,
+      "peso_kg_km": 756.7
+    },
+    {
+      "cal": "4/0 AWG",
+      "s": 107.2,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 230,
+      "r_ac": 0.161,
+      "x": 0.074,
+      "peso_kg_km": 954.4
+    },
+    {
+      "cal": "250 kcmil",
+      "s": 126.7,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 255,
+      "r_ac": 0.136,
+      "x": 0.072,
+      "peso_kg_km": 1128.2
+    },
+    {
+      "cal": "300 kcmil",
+      "s": 152.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 285,
+      "r_ac": 0.113,
+      "x": 0.07,
+      "peso_kg_km": 1353.6
+    },
+    {
+      "cal": "350 kcmil",
+      "s": 177.3,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 310,
+      "r_ac": 0.098,
+      "x": 0.068,
+      "peso_kg_km": 1577.7
+    },
+    {
+      "cal": "400 kcmil",
+      "s": 202.7,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 335,
+      "r_ac": 0.085,
+      "x": 0.067,
+      "peso_kg_km": 1804.6
+    },
+    {
+      "cal": "500 kcmil",
+      "s": 253.4,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 380,
+      "r_ac": 0.069,
+      "x": 0.065,
+      "peso_kg_km": 2255.4
+    },
+    {
+      "cal": "600 kcmil",
+      "s": 304.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 420,
+      "r_ac": 0.057,
+      "x": 0.063,
+      "peso_kg_km": 2706.0
+    },
+    {
+      "cal": "750 kcmil",
+      "s": 380.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 475,
+      "r_ac": 0.046,
+      "x": 0.062,
+      "peso_kg_km": 3382.0
+    },
+    {
+      "cal": "6 AWG",
+      "s": 13.3,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 50,
+      "r_ac": 2.143,
+      "x": 0.095,
+      "peso_kg_km": 35.9
+    },
+    {
+      "cal": "4 AWG",
+      "s": 21.2,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 65,
+      "r_ac": 1.347,
+      "x": 0.092,
+      "peso_kg_km": 57.2
+    },
+    {
+      "cal": "2 AWG",
+      "s": 33.6,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 90,
+      "r_ac": 0.848,
+      "x": 0.085,
+      "peso_kg_km": 90.7
+    },
+    {
+      "cal": "1/0 AWG",
+      "s": 53.5,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 120,
+      "r_ac": 0.532,
+      "x": 0.082,
+      "peso_kg_km": 144.5
+    },
+    {
+      "cal": "2/0 AWG",
+      "s": 67.4,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 135,
+      "r_ac": 0.422,
+      "x": 0.079,
+      "peso_kg_km": 181.9
+    },
+    {
+      "cal": "3/0 AWG",
+      "s": 85.0,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 155,
+      "r_ac": 0.335,
+      "x": 0.077,
+      "peso_kg_km": 229.5
+    },
+    {
+      "cal": "4/0 AWG",
+      "s": 107.2,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 180,
+      "r_ac": 0.266,
+      "x": 0.074,
+      "peso_kg_km": 289.4
+    },
+    {
+      "cal": "250 kcmil",
+      "s": 126.7,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 205,
+      "r_ac": 0.225,
+      "x": 0.072,
+      "peso_kg_km": 342.1
+    },
+    {
+      "cal": "350 kcmil",
+      "s": 177.3,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 250,
+      "r_ac": 0.162,
+      "x": 0.068,
+      "peso_kg_km": 478.7
+    },
+    {
+      "cal": "500 kcmil",
+      "s": 253.4,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 310,
+      "r_ac": 0.114,
+      "x": 0.065,
+      "peso_kg_km": 684.2
+    }
+  ],
+  "BT_mm2": [
+    {
+      "cal": "1.5 mm²",
+      "s": 1.5,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 15,
+      "r_ac": 12.1,
+      "x": 0.115,
+      "peso_kg_km": 13.4
+    },
+    {
+      "cal": "2.5 mm²",
+      "s": 2.5,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 21,
+      "r_ac": 7.41,
+      "x": 0.113,
+      "peso_kg_km": 22.3
+    },
+    {
+      "cal": "4 mm²",
+      "s": 4.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 28,
+      "r_ac": 4.61,
+      "x": 0.11,
+      "peso_kg_km": 35.6
+    },
+    {
+      "cal": "6 mm²",
+      "s": 6.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 36,
+      "r_ac": 3.08,
+      "x": 0.108,
+      "peso_kg_km": 53.4
+    },
+    {
+      "cal": "10 mm²",
+      "s": 10.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 50,
+      "r_ac": 1.83,
+      "x": 0.102,
+      "peso_kg_km": 89.0
+    },
+    {
+      "cal": "16 mm²",
+      "s": 16.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 66,
+      "r_ac": 1.15,
+      "x": 0.095,
+      "peso_kg_km": 142.4
+    },
+    {
+      "cal": "25 mm²",
+      "s": 25.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 84,
+      "r_ac": 0.727,
+      "x": 0.09,
+      "peso_kg_km": 222.5
+    },
+    {
+      "cal": "35 mm²",
+      "s": 35.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 104,
+      "r_ac": 0.524,
+      "x": 0.085,
+      "peso_kg_km": 311.5
+    },
+    {
+      "cal": "50 mm²",
+      "s": 50.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 125,
+      "r_ac": 0.387,
+      "x": 0.083,
+      "peso_kg_km": 445.0
+    },
+    {
+      "cal": "70 mm²",
+      "s": 70.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 158,
+      "r_ac": 0.268,
+      "x": 0.08,
+      "peso_kg_km": 623.0
+    },
+    {
+      "cal": "95 mm²",
+      "s": 95.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 192,
+      "r_ac": 0.193,
+      "x": 0.077,
+      "peso_kg_km": 845.5
+    },
+    {
+      "cal": "120 mm²",
+      "s": 120.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 220,
+      "r_ac": 0.153,
+      "x": 0.075,
+      "peso_kg_km": 1068.0
+    },
+    {
+      "cal": "150 mm²",
+      "s": 150.0,
+      "mat": "cobre",
+      "ais": "THHN",
+      "a_75": 252,
+      "r_ac": 0.124,
+      "x": 0.073,
+      "peso_kg_km": 1335.0
+    },
+    {
+      "cal": "185 mm²",
+      "s": 185.0,
+      "mat": "cobre",
+      "ais": "XLPE",
+      "a_75": 290,
+      "r_ac": 0.101,
+      "x": 0.071,
+      "peso_kg_km": 1646.5
+    },
+    {
+      "cal": "240 mm²",
+      "s": 240.0,
+      "mat": "cobre",
+      "ais": "XLPE",
+      "a_75": 342,
+      "r_ac": 0.0775,
+      "x": 0.069,
+      "peso_kg_km": 2136.0
+    },
+    {
+      "cal": "300 mm²",
+      "s": 300.0,
+      "mat": "cobre",
+      "ais": "XLPE",
+      "a_75": 395,
+      "r_ac": 0.062,
+      "x": 0.067,
+      "peso_kg_km": 2670.0
+    },
+    {
+      "cal": "400 mm²",
+      "s": 400.0,
+      "mat": "cobre",
+      "ais": "XLPE",
+      "a_75": 456,
+      "r_ac": 0.0465,
+      "x": 0.065,
+      "peso_kg_km": 3560.0
+    },
+    {
+      "cal": "16 mm²",
+      "s": 16.0,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 52,
+      "r_ac": 1.91,
+      "x": 0.095,
+      "peso_kg_km": 43.2
+    },
+    {
+      "cal": "25 mm²",
+      "s": 25.0,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 66,
+      "r_ac": 1.2,
+      "x": 0.09,
+      "peso_kg_km": 67.5
+    },
+    {
+      "cal": "35 mm²",
+      "s": 35.0,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 82,
+      "r_ac": 0.868,
+      "x": 0.085,
+      "peso_kg_km": 94.5
+    },
+    {
+      "cal": "50 mm²",
+      "s": 50.0,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 100,
+      "r_ac": 0.641,
+      "x": 0.083,
+      "peso_kg_km": 135.0
+    },
+    {
+      "cal": "70 mm²",
+      "s": 70.0,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 128,
+      "r_ac": 0.443,
+      "x": 0.08,
+      "peso_kg_km": 189.0
+    },
+    {
+      "cal": "95 mm²",
+      "s": 95.0,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 158,
+      "r_ac": 0.32,
+      "x": 0.077,
+      "peso_kg_km": 256.5
+    },
+    {
+      "cal": "120 mm²",
+      "s": 120.0,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 183,
+      "r_ac": 0.253,
+      "x": 0.075,
+      "peso_kg_km": 324.0
+    },
+    {
+      "cal": "150 mm²",
+      "s": 150.0,
+      "mat": "aluminio",
+      "ais": "THHN",
+      "a_75": 210,
+      "r_ac": 0.206,
+      "x": 0.073,
+      "peso_kg_km": 405.0
+    },
+    {
+      "cal": "185 mm²",
+      "s": 185.0,
+      "mat": "aluminio",
+      "ais": "XLPE",
+      "a_75": 244,
+      "r_ac": 0.164,
+      "x": 0.071,
+      "peso_kg_km": 499.5
+    },
+    {
+      "cal": "240 mm²",
+      "s": 240.0,
+      "mat": "aluminio",
+      "ais": "XLPE",
+      "a_75": 290,
+      "r_ac": 0.125,
+      "x": 0.069,
+      "peso_kg_km": 648.0
+    },
+    {
+      "cal": "300 mm²",
+      "s": 300.0,
+      "mat": "aluminio",
+      "ais": "XLPE",
+      "a_75": 340,
+      "r_ac": 0.1,
+      "x": 0.067,
+      "peso_kg_km": 810.0
+    }
+  ],
+  "MT_XLPE": [
+    {
+      "cal": "35 mm²",
+      "s": 35,
+      "mat": "cobre",
+      "ais": "XLPE 15kV",
+      "a_75": 145,
+      "r_ac": 0.524,
+      "x": 0.113,
+      "vmax_kv": 15,
+      "peso_kg_km": 850
+    },
+    {
+      "cal": "50 mm²",
+      "s": 50,
+      "mat": "cobre",
+      "ais": "XLPE 15kV",
+      "a_75": 175,
+      "r_ac": 0.387,
+      "x": 0.11,
+      "vmax_kv": 15,
+      "peso_kg_km": 1010
+    },
+    {
+      "cal": "70 mm²",
+      "s": 70,
+      "mat": "cobre",
+      "ais": "XLPE 15kV",
+      "a_75": 215,
+      "r_ac": 0.268,
+      "x": 0.107,
+      "vmax_kv": 15,
+      "peso_kg_km": 1240
+    },
+    {
+      "cal": "95 mm²",
+      "s": 95,
+      "mat": "cobre",
+      "ais": "XLPE 15kV",
+      "a_75": 260,
+      "r_ac": 0.193,
+      "x": 0.104,
+      "vmax_kv": 15,
+      "peso_kg_km": 1510
+    },
+    {
+      "cal": "120 mm²",
+      "s": 120,
+      "mat": "cobre",
+      "ais": "XLPE 15kV",
+      "a_75": 300,
+      "r_ac": 0.153,
+      "x": 0.102,
+      "vmax_kv": 15,
+      "peso_kg_km": 1760
+    },
+    {
+      "cal": "150 mm²",
+      "s": 150,
+      "mat": "cobre",
+      "ais": "XLPE 15kV",
+      "a_75": 345,
+      "r_ac": 0.124,
+      "x": 0.1,
+      "vmax_kv": 15,
+      "peso_kg_km": 2080
+    },
+    {
+      "cal": "185 mm²",
+      "s": 185,
+      "mat": "cobre",
+      "ais": "XLPE 15kV",
+      "a_75": 395,
+      "r_ac": 0.101,
+      "x": 0.098,
+      "vmax_kv": 15,
+      "peso_kg_km": 2470
+    },
+    {
+      "cal": "240 mm²",
+      "s": 240,
+      "mat": "cobre",
+      "ais": "XLPE 15kV",
+      "a_75": 465,
+      "r_ac": 0.0775,
+      "x": 0.095,
+      "vmax_kv": 15,
+      "peso_kg_km": 3040
+    },
+    {
+      "cal": "50 mm²",
+      "s": 50,
+      "mat": "aluminio",
+      "ais": "XLPE 15kV",
+      "a_75": 135,
+      "r_ac": 0.641,
+      "x": 0.11,
+      "vmax_kv": 15,
+      "peso_kg_km": 620
+    },
+    {
+      "cal": "70 mm²",
+      "s": 70,
+      "mat": "aluminio",
+      "ais": "XLPE 15kV",
+      "a_75": 170,
+      "r_ac": 0.443,
+      "x": 0.107,
+      "vmax_kv": 15,
+      "peso_kg_km": 750
+    },
+    {
+      "cal": "95 mm²",
+      "s": 95,
+      "mat": "aluminio",
+      "ais": "XLPE 15kV",
+      "a_75": 205,
+      "r_ac": 0.32,
+      "x": 0.104,
+      "vmax_kv": 15,
+      "peso_kg_km": 920
+    },
+    {
+      "cal": "120 mm²",
+      "s": 120,
+      "mat": "aluminio",
+      "ais": "XLPE 15kV",
+      "a_75": 240,
+      "r_ac": 0.253,
+      "x": 0.102,
+      "vmax_kv": 15,
+      "peso_kg_km": 1080
+    },
+    {
+      "cal": "150 mm²",
+      "s": 150,
+      "mat": "aluminio",
+      "ais": "XLPE 15kV",
+      "a_75": 275,
+      "r_ac": 0.206,
+      "x": 0.1,
+      "vmax_kv": 15,
+      "peso_kg_km": 1310
+    },
+    {
+      "cal": "185 mm²",
+      "s": 185,
+      "mat": "aluminio",
+      "ais": "XLPE 15kV",
+      "a_75": 315,
+      "r_ac": 0.164,
+      "x": 0.098,
+      "vmax_kv": 15,
+      "peso_kg_km": 1560
+    },
+    {
+      "cal": "240 mm²",
+      "s": 240,
+      "mat": "aluminio",
+      "ais": "XLPE 15kV",
+      "a_75": 375,
+      "r_ac": 0.125,
+      "x": 0.095,
+      "vmax_kv": 15,
+      "peso_kg_km": 1960
+    }
+  ],
+  "MT_ACSR": [
+    {
+      "cal": "35 mm²",
+      "s": 35,
+      "mat": "aluminio",
+      "ais": "ACSR aéreo",
+      "a_75": 155,
+      "r_ac": 0.868,
+      "x": 0.36,
+      "vmax_kv": 34.5,
+      "peso_kg_km": 143
+    },
+    {
+      "cal": "50 mm²",
+      "s": 50,
+      "mat": "aluminio",
+      "ais": "ACSR aéreo",
+      "a_75": 190,
+      "r_ac": 0.612,
+      "x": 0.352,
+      "vmax_kv": 34.5,
+      "peso_kg_km": 188
+    },
+    {
+      "cal": "70 mm²",
+      "s": 70,
+      "mat": "aluminio",
+      "ais": "ACSR aéreo",
+      "a_75": 235,
+      "r_ac": 0.443,
+      "x": 0.345,
+      "vmax_kv": 34.5,
+      "peso_kg_km": 247
+    },
+    {
+      "cal": "95 mm²",
+      "s": 95,
+      "mat": "aluminio",
+      "ais": "ACSR aéreo",
+      "a_75": 285,
+      "r_ac": 0.32,
+      "x": 0.338,
+      "vmax_kv": 34.5,
+      "peso_kg_km": 320
+    },
+    {
+      "cal": "120 mm²",
+      "s": 120,
+      "mat": "aluminio",
+      "ais": "ACSR aéreo",
+      "a_75": 330,
+      "r_ac": 0.253,
+      "x": 0.333,
+      "vmax_kv": 34.5,
+      "peso_kg_km": 395
+    },
+    {
+      "cal": "150 mm²",
+      "s": 150,
+      "mat": "aluminio",
+      "ais": "ACSR aéreo",
+      "a_75": 375,
+      "r_ac": 0.206,
+      "x": 0.328,
+      "vmax_kv": 34.5,
+      "peso_kg_km": 480
+    },
+    {
+      "cal": "185 mm²",
+      "s": 185,
+      "mat": "aluminio",
+      "ais": "ACSR aéreo",
+      "a_75": 430,
+      "r_ac": 0.164,
+      "x": 0.323,
+      "vmax_kv": 34.5,
+      "peso_kg_km": 573
+    },
+    {
+      "cal": "240 mm²",
+      "s": 240,
+      "mat": "aluminio",
+      "ais": "ACSR aéreo",
+      "a_75": 500,
+      "r_ac": 0.125,
+      "x": 0.315,
+      "vmax_kv": 34.5,
+      "peso_kg_km": 720
+    }
+  ],
+  "MT_EPR": [
+    {
+      "cal": "35 mm²",
+      "s": 35,
+      "mat": "cobre",
+      "ais": "EPR 15kV",
+      "a_75": 150,
+      "r_ac": 0.524,
+      "x": 0.108,
+      "vmax_kv": 15,
+      "peso_kg_km": 870
+    },
+    {
+      "cal": "50 mm²",
+      "s": 50,
+      "mat": "cobre",
+      "ais": "EPR 15kV",
+      "a_75": 185,
+      "r_ac": 0.387,
+      "x": 0.105,
+      "vmax_kv": 15,
+      "peso_kg_km": 1030
+    },
+    {
+      "cal": "70 mm²",
+      "s": 70,
+      "mat": "cobre",
+      "ais": "EPR 15kV",
+      "a_75": 225,
+      "r_ac": 0.268,
+      "x": 0.102,
+      "vmax_kv": 15,
+      "peso_kg_km": 1265
+    },
+    {
+      "cal": "95 mm²",
+      "s": 95,
+      "mat": "cobre",
+      "ais": "EPR 15kV",
+      "a_75": 270,
+      "r_ac": 0.193,
+      "x": 0.099,
+      "vmax_kv": 15,
+      "peso_kg_km": 1540
+    },
+    {
+      "cal": "120 mm²",
+      "s": 120,
+      "mat": "cobre",
+      "ais": "EPR 15kV",
+      "a_75": 310,
+      "r_ac": 0.153,
+      "x": 0.097,
+      "vmax_kv": 15,
+      "peso_kg_km": 1795
+    },
+    {
+      "cal": "150 mm²",
+      "s": 150,
+      "mat": "cobre",
+      "ais": "EPR 15kV",
+      "a_75": 360,
+      "r_ac": 0.124,
+      "x": 0.095,
+      "vmax_kv": 15,
+      "peso_kg_km": 2120
+    },
+    {
+      "cal": "185 mm²",
+      "s": 185,
+      "mat": "cobre",
+      "ais": "EPR 15kV",
+      "a_75": 410,
+      "r_ac": 0.101,
+      "x": 0.093,
+      "vmax_kv": 15,
+      "peso_kg_km": 2510
+    },
+    {
+      "cal": "240 mm²",
+      "s": 240,
+      "mat": "cobre",
+      "ais": "EPR 15kV",
+      "a_75": 480,
+      "r_ac": 0.0775,
+      "x": 0.09,
+      "vmax_kv": 15,
+      "peso_kg_km": 3090
+    }
+  ],
+  "MT_XLPE_36kV": [
+    {
+      "cal": "35 mm²",
+      "s": 35,
+      "mat": "cobre",
+      "ais": "XLPE 36kV",
+      "a_75": 130,
+      "r_ac": 0.524,
+      "x": 0.12,
+      "vmax_kv": 36,
+      "peso_kg_km": 920
+    },
+    {
+      "cal": "50 mm²",
+      "s": 50,
+      "mat": "cobre",
+      "ais": "XLPE 36kV",
+      "a_75": 160,
+      "r_ac": 0.387,
+      "x": 0.117,
+      "vmax_kv": 36,
+      "peso_kg_km": 1090
+    },
+    {
+      "cal": "70 mm²",
+      "s": 70,
+      "mat": "cobre",
+      "ais": "XLPE 36kV",
+      "a_75": 195,
+      "r_ac": 0.268,
+      "x": 0.114,
+      "vmax_kv": 36,
+      "peso_kg_km": 1330
+    },
+    {
+      "cal": "95 mm²",
+      "s": 95,
+      "mat": "cobre",
+      "ais": "XLPE 36kV",
+      "a_75": 235,
+      "r_ac": 0.193,
+      "x": 0.111,
+      "vmax_kv": 36,
+      "peso_kg_km": 1610
+    },
+    {
+      "cal": "120 mm²",
+      "s": 120,
+      "mat": "cobre",
+      "ais": "XLPE 36kV",
+      "a_75": 270,
+      "r_ac": 0.153,
+      "x": 0.109,
+      "vmax_kv": 36,
+      "peso_kg_km": 1880
+    },
+    {
+      "cal": "150 mm²",
+      "s": 150,
+      "mat": "cobre",
+      "ais": "XLPE 36kV",
+      "a_75": 310,
+      "r_ac": 0.124,
+      "x": 0.107,
+      "vmax_kv": 36,
+      "peso_kg_km": 2200
+    },
+    {
+      "cal": "185 mm²",
+      "s": 185,
+      "mat": "cobre",
+      "ais": "XLPE 36kV",
+      "a_75": 355,
+      "r_ac": 0.101,
+      "x": 0.105,
+      "vmax_kv": 36,
+      "peso_kg_km": 2610
+    },
+    {
+      "cal": "240 mm²",
+      "s": 240,
+      "mat": "cobre",
+      "ais": "XLPE 36kV",
+      "a_75": 415,
+      "r_ac": 0.0775,
+      "x": 0.102,
+      "vmax_kv": 36,
+      "peso_kg_km": 3200
+    },
+    {
+      "cal": "300 mm²",
+      "s": 300,
+      "mat": "cobre",
+      "ais": "XLPE 36kV",
+      "a_75": 475,
+      "r_ac": 0.062,
+      "x": 0.1,
+      "vmax_kv": 36,
+      "peso_kg_km": 3850
+    },
+    {
+      "cal": "50 mm²",
+      "s": 50,
+      "mat": "aluminio",
+      "ais": "XLPE 36kV",
+      "a_75": 120,
+      "r_ac": 0.641,
+      "x": 0.117,
+      "vmax_kv": 36,
+      "peso_kg_km": 640
+    },
+    {
+      "cal": "70 mm²",
+      "s": 70,
+      "mat": "aluminio",
+      "ais": "XLPE 36kV",
+      "a_75": 150,
+      "r_ac": 0.443,
+      "x": 0.114,
+      "vmax_kv": 36,
+      "peso_kg_km": 780
+    },
+    {
+      "cal": "95 mm²",
+      "s": 95,
+      "mat": "aluminio",
+      "ais": "XLPE 36kV",
+      "a_75": 185,
+      "r_ac": 0.32,
+      "x": 0.111,
+      "vmax_kv": 36,
+      "peso_kg_km": 960
+    },
+    {
+      "cal": "120 mm²",
+      "s": 120,
+      "mat": "aluminio",
+      "ais": "XLPE 36kV",
+      "a_75": 215,
+      "r_ac": 0.253,
+      "x": 0.109,
+      "vmax_kv": 36,
+      "peso_kg_km": 1130
+    },
+    {
+      "cal": "150 mm²",
+      "s": 150,
+      "mat": "aluminio",
+      "ais": "XLPE 36kV",
+      "a_75": 250,
+      "r_ac": 0.206,
+      "x": 0.107,
+      "vmax_kv": 36,
+      "peso_kg_km": 1370
+    },
+    {
+      "cal": "185 mm²",
+      "s": 185,
+      "mat": "aluminio",
+      "ais": "XLPE 36kV",
+      "a_75": 285,
+      "r_ac": 0.164,
+      "x": 0.105,
+      "vmax_kv": 36,
+      "peso_kg_km": 1630
+    },
+    {
+      "cal": "240 mm²",
+      "s": 240,
+      "mat": "aluminio",
+      "ais": "XLPE 36kV",
+      "a_75": 340,
+      "r_ac": 0.125,
+      "x": 0.102,
+      "vmax_kv": 36,
+      "peso_kg_km": 2040
+    }
+  ]
+}

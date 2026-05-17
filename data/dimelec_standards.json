@@ -1,0 +1,64 @@
+{
+  "_product": "DimElec LATAM",
+  "_version": "1.0.0",
+  "BT": {
+    "NEC_2023": {
+      "scope": "Código Eléctrico Nacional (USA/LATAM adaptado)",
+      "tables": [
+        "310.15(B)(16)",
+        "250.122",
+        "430.24",
+        "240"
+      ]
+    },
+    "IEC_60364": {
+      "scope": "Instalaciones eléctricas de baja tensión",
+      "parts": [
+        "5-52 Ampacidad",
+        "4-43 Protección",
+        "5-54 Tierra"
+      ]
+    },
+    "NTC_2050": {
+      "scope": "Código Eléctrico Colombiano",
+      "country": "CO"
+    }
+  },
+  "MT": {
+    "IEC_60502": {
+      "scope": "Cables de potencia 1–30 kV",
+      "key_clauses": [
+        "§14.1 Emergencia",
+        "§14.4 Paralelo"
+      ]
+    },
+    "IEC_60909": {
+      "scope": "Corrientes de cortocircuito en sistemas trifásicos de CA",
+      "version": "2016"
+    },
+    "IEC_60287": {
+      "scope": "Cálculo de la capacidad de corriente de cables",
+      "part": "3-2 Kelvin"
+    },
+    "IEC_60071": {
+      "scope": "Coordinación del aislamiento — BIL",
+      "version": "2011"
+    },
+    "IEC_60228": {
+      "scope": "Conductores para cables aislados — coeficiente temperatura"
+    }
+  },
+  "compliance_chain_bt": [
+    "Ampacidad Iz≥Ib",
+    "Regulación ΔV≤límite",
+    "Protección Ib≤In≤Iz",
+    "Capacidad interruptiva Icu≥Icc",
+    "CC térmico S≥Smin"
+  ],
+  "compliance_chain_mt": [
+    "Ampacidad Iz≥I_nom",
+    "Nivel tensión vmax≥V_sistema",
+    "Regulación ΔV≤límite",
+    "CC térmico S≥Smin"
+  ]
+}

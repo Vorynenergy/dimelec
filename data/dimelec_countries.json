@@ -1,0 +1,85 @@
+{
+  "_product": "DimElec LATAM",
+  "_version": "1.0.0",
+  "_prefix": "dimelec",
+  "countries": {
+    "CO": {
+      "name": "Colombia", "flag": "🇨🇴",
+      "standard": "RETIE 2024 / NTC 2050",
+      "standards_list": ["RETIE 2024", "NTC 2050"],
+      "dv_terminal_pct": 3.0, "dv_feeder_pct": 5.0, "dv_mt_pct": 5.0,
+      "motor_factor": 1.25, "continuous_factor": 1.25,
+      "preferred_unit": "AWG", "frequency_hz": 60,
+      "base_temp_C": 30, "conductor_bt_temp_C": 75, "conductor_mt_temp_C": 90,
+      "k_cu_thhn": 115, "k_al_thhn": 74, "k_cu_xlpe": 143, "k_al_xlpe": 94,
+      "voltages_bt_v": [120, 208, 240, 480],
+      "voltages_mt_v": [11400, 13200, 13800, 34500],
+      "grid_operators": ["EDEQ","CELSIA","ENEL","EPM","CODENSA","EMCALI"]
+    },
+    "MX": {
+      "name": "México", "flag": "🇲🇽",
+      "standard": "NOM-001-SEDE",
+      "standards_list": ["NOM-001-SEDE-2012"],
+      "dv_terminal_pct": 3.0, "dv_feeder_pct": 5.0, "dv_mt_pct": 5.0,
+      "motor_factor": 1.25, "continuous_factor": 1.25,
+      "preferred_unit": "AWG", "frequency_hz": 60,
+      "base_temp_C": 30, "conductor_bt_temp_C": 75, "conductor_mt_temp_C": 90,
+      "k_cu_thhn": 115, "k_al_thhn": 74, "k_cu_xlpe": 143, "k_al_xlpe": 94,
+      "voltages_bt_v": [127, 220, 480],
+      "voltages_mt_v": [13200, 13800, 23000, 34500],
+      "grid_operators": ["CFE"]
+    },
+    "PE": {
+      "name": "Perú", "flag": "🇵🇪",
+      "standard": "CNE Utilización / Suministro",
+      "standards_list": ["CNE Utilización", "CNE Suministro"],
+      "dv_terminal_pct": 2.5, "dv_feeder_pct": 4.0, "dv_mt_pct": 5.0,
+      "motor_factor": 1.25, "continuous_factor": 1.25,
+      "preferred_unit": "mm2", "frequency_hz": 60,
+      "base_temp_C": 30, "conductor_bt_temp_C": 70, "conductor_mt_temp_C": 90,
+      "k_cu_thhn": 115, "k_al_thhn": 74, "k_cu_xlpe": 143, "k_al_xlpe": 94,
+      "voltages_bt_v": [220, 380, 440],
+      "voltages_mt_v": [10000, 22900, 33000],
+      "grid_operators": ["Luz del Sur","Enel Perú","Hidrandina"]
+    },
+    "CL": {
+      "name": "Chile", "flag": "🇨🇱",
+      "standard": "SEC / NCh Elec 4/2003",
+      "standards_list": ["SEC","NCh Elec 4/2003"],
+      "dv_terminal_pct": 3.0, "dv_feeder_pct": 5.0, "dv_mt_pct": 5.0,
+      "motor_factor": 1.25, "continuous_factor": 1.25,
+      "preferred_unit": "mm2", "frequency_hz": 50,
+      "base_temp_C": 25, "conductor_bt_temp_C": 70, "conductor_mt_temp_C": 90,
+      "k_cu_thhn": 115, "k_al_thhn": 74, "k_cu_xlpe": 143, "k_al_xlpe": 94,
+      "voltages_bt_v": [220, 380, 400],
+      "voltages_mt_v": [12000, 23000, 33000],
+      "grid_operators": ["Enel Distribución","CGE","Frontel"]
+    },
+    "EC": {
+      "name": "Ecuador", "flag": "🇪🇨",
+      "standard": "NEC-SB-IE / ARCONEL",
+      "standards_list": ["NEC-SB-IE","ARCONEL"],
+      "dv_terminal_pct": 3.0, "dv_feeder_pct": 5.0, "dv_mt_pct": 5.0,
+      "motor_factor": 1.25, "continuous_factor": 1.25,
+      "preferred_unit": "mm2", "frequency_hz": 60,
+      "base_temp_C": 30, "conductor_bt_temp_C": 75, "conductor_mt_temp_C": 90,
+      "k_cu_thhn": 115, "k_al_thhn": 74, "k_cu_xlpe": 143, "k_al_xlpe": 94,
+      "voltages_bt_v": [120, 208, 220, 380],
+      "voltages_mt_v": [6300, 13800, 22000, 33000],
+      "grid_operators": ["ELEPCO","EEASA","CNEL"]
+    },
+    "IEC": {
+      "name": "Base IEC", "flag": "🌐",
+      "standard": "IEC 60364 / 60502 / 60909",
+      "standards_list": ["IEC 60364","IEC 60502","IEC 60909"],
+      "dv_terminal_pct": 3.0, "dv_feeder_pct": 5.0, "dv_mt_pct": 5.0,
+      "motor_factor": 1.25, "continuous_factor": 1.25,
+      "preferred_unit": "mm2", "frequency_hz": 50,
+      "base_temp_C": 30, "conductor_bt_temp_C": 70, "conductor_mt_temp_C": 90,
+      "k_cu_thhn": 115, "k_al_thhn": 74, "k_cu_xlpe": 143, "k_al_xlpe": 94,
+      "voltages_bt_v": [230, 400, 690],
+      "voltages_mt_v": [6600, 11000, 22000, 33000],
+      "grid_operators": []
+    }
+  }
+}

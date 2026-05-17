@@ -1,0 +1,37 @@
+{
+  "_product": "DimElec LATAM",
+  "_version": "1.0.0",
+  "sections_bt": [
+    "1. Información General",
+    "2. Inventario de Cargas",
+    "3. Cálculo de Cargas",
+    "4. Selección del Conductor",
+    "5. Regulación de Tensión",
+    "6. Pérdidas Eléctricas",
+    "7. Protección Eléctrica",
+    "8. CC Térmico",
+    "9. Cortocircuito IEC 60909",
+    "10. Verificación Global",
+    "11. Recomendaciones",
+    "Advertencia Técnica",
+    "Firmas"
+  ],
+  "sections_mt": [
+    "1. Datos Generales MT",
+    "2. Conductor MT",
+    "3. Regulación MT",
+    "3.1 Perfil de Tensión",
+    "4. Pérdidas MT",
+    "5. CC Térmico MT",
+    "6. Cortocircuito IEC 60909",
+    "7. Verificación Global",
+    "Advertencia",
+    "Firmas"
+  ],
+  "disclaimer": "Los resultados constituyen ayuda técnica preliminar. La validación final debe realizarse por un Ingeniero Electricista o Electrónico habilitado, conforme a normativa vigente y requerimientos del operador de red.",
+  "corporate_colors": {
+    "primary": "#1A376C",
+    "secondary": "#2563EB",
+    "accent": "#10B981"
+  }
+}

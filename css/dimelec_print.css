@@ -1,0 +1,20 @@
+/* DimElec LATAM — dimelec_print.css */
+@media print {
+  .dimelec-nav,.dimelec-sidebar,.dimelec-actions,.dimelec-btn,button{display:none!important}
+  body.dimelec-app{background:#fff!important;color:#1a1a1a!important;font-size:11pt}
+  .dimelec-layout{display:block!important}
+  .dimelec-main{padding:0!important;max-width:100%!important}
+  .dimelec-card{background:#fff!important;border:1px solid #ccc!important;border-radius:4px!important;page-break-inside:avoid;margin-bottom:12pt}
+  .dimelec-metric{background:#f7f7f7!important;border:1px solid #ddd!important}
+  .dimelec-metric-value{color:#1a1a1a!important;font-size:16pt!important}
+  .dimelec-result-ok{background:#f0fdf4!important;border-color:#86efac!important;color:#166534!important}
+  .dimelec-result-fail{background:#fef2f2!important;border-color:#fca5a5!important;color:#991b1b!important}
+  .dimelec-badge-ok{background:#dcfce7!important;color:#166534!important}
+  .dimelec-badge-fail{background:#fee2e2!important;color:#991b1b!important}
+  .dimelec-badge-warn{background:#fef9c3!important;color:#854d0e!important}
+  .dimelec-eq{background:#f1f5f9!important;color:#1e40af!important;font-size:9pt}
+  .dimelec-adv{background:#fffbeb!important;color:#92400e!important}
+  @page{size:A4;margin:20mm 15mm 25mm 15mm}
+  h1,h2,h3{page-break-after:avoid}
+  table{page-break-inside:avoid}
+}

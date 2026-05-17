@@ -1,0 +1,131 @@
+{
+  "_product": "DimElec LATAM",
+  "_version": "1.0.0",
+  "commercial_NEC_A": [
+    15,
+    20,
+    25,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    125,
+    150,
+    175,
+    200,
+    225,
+    250,
+    300,
+    350,
+    400,
+    450,
+    500,
+    600,
+    700,
+    800,
+    1000,
+    1200,
+    1600,
+    2000
+  ],
+  "commercial_IEC_A": [
+    6,
+    10,
+    13,
+    16,
+    20,
+    25,
+    32,
+    40,
+    50,
+    63,
+    80,
+    100,
+    125,
+    160,
+    200,
+    250,
+    315,
+    400,
+    500,
+    630,
+    800,
+    1000,
+    1250,
+    1600,
+    2000
+  ],
+  "fuses_MT_A": [
+    3,
+    5,
+    6,
+    8,
+    10,
+    12,
+    15,
+    20,
+    25,
+    30,
+    40,
+    50,
+    65,
+    80,
+    100,
+    125,
+    150,
+    200
+  ],
+  "interrupting_capacities": {
+    "_norma": "IEC 60947-2 / IEC 60898",
+    "MCB_6kA_residencial": {
+      "Icu": 6,
+      "Ics": 3
+    },
+    "MCB_10kA_comercial": {
+      "Icu": 10,
+      "Ics": 7.5
+    },
+    "MCCB_25kA": {
+      "Icu": 25,
+      "Ics": 18.75
+    },
+    "MCCB_36kA": {
+      "Icu": 36,
+      "Ics": 27
+    },
+    "MCCB_50kA": {
+      "Icu": 50,
+      "Ics": 37.5
+    },
+    "ACB_65kA": {
+      "Icu": 65,
+      "Ics": 65
+    },
+    "fusible_gG_100kA": {
+      "Icu": 100,
+      "Ics": 100
+    }
+  },
+  "breaker_curves": {
+    "B": {
+      "min_mult": 3,
+      "max_mult": 5,
+      "use": "Cargas resistivas, no motores"
+    },
+    "C": {
+      "min_mult": 5,
+      "max_mult": 10,
+      "use": "Uso general, comercial"
+    },
+    "D": {
+      "min_mult": 10,
+      "max_mult": 20,
+      "use": "Motores, transformadores"
+    }
+  }
+}

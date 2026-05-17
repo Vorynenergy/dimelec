@@ -1,0 +1,126 @@
+{
+  "name": "DimElec LATAM",
+  "product_id": "dimelec-latam",
+  "version": "1.0.0",
+  "prefix": "dimelec_",
+  "platform": "Voryn Energy",
+  "description": "Plataforma profesional de dimensionamiento eléctrico BT/MT para Latinoamérica",
+  "build_date": "2026-05-16",
+  "status": "voryn-ready",
+  "critical_modules": {
+    "frontend": [
+      "index.html",
+      "js/dimelec_app.js",
+      "js/dimelec_ui.js",
+      "js/dimelec_calculations.js",
+      "js/dimelec_conductor_selection.js",
+      "js/dimelec_validations.js",
+      "js/dimelec_standards.js"
+    ],
+    "backend": [
+      "app/main.py",
+      "app/core/bt/motor_bt.py",
+      "app/core/mt/motor_mt.py",
+      "app/core/repo.py",
+      "app/core/validador.py"
+    ],
+    "data": [
+      "data/dimelec_conductors.json",
+      "data/dimelec_countries.json",
+      "data/dimelec_correction_factors.json",
+      "data/dimelec_ampacity_tables.json"
+    ]
+  },
+  "offline_capable": true,
+  "offline_modules": [
+    "BT cálculo completo",
+    "Exportación JSON/CSV",
+    "Gráficas Chart.js"
+  ],
+  "requires_backend": [
+    "MT cálculo completo",
+    "DOCX memoria BT/MT"
+  ],
+  "bug_fixes": [
+    {
+      "id": "#1",
+      "desc": "XLPE 15kV usado para 23/33kV — CRÍTICO",
+      "status": "FIXED v1.0.1"
+    },
+    {
+      "id": "#2",
+      "desc": "Emergencia reportada ambiguamente",
+      "status": "FIXED v1.0.1"
+    },
+    {
+      "id": "#3",
+      "desc": "Sin recomendación paralelo cuando I>amp_max",
+      "status": "FIXED v1.0.1"
+    },
+    {
+      "id": "#4",
+      "desc": "ACSR sin vmax_kv",
+      "status": "FIXED v1.0.1"
+    }
+  ],
+  "exports_supported": {
+    "json_payload": true,
+    "json_resultado": true,
+    "csv_cargas": true,
+    "csv_resumen": true,
+    "docx_bt": "requires_backend",
+    "docx_mt": "requires_backend",
+    "pdf": "pending",
+    "xlsx": "pending"
+  },
+  "technical_tables": [
+    "BT_AWG (19 cobre + 9 aluminio)",
+    "BT_mm2 (17 cobre + 13 aluminio)",
+    "MT_XLPE_15kV (8 Cu + 7 Al)",
+    "MT_XLPE_36kV (9 Cu + 6 Al) — NUEVO v1.0.1",
+    "MT_ACSR (8 Al, vmax=34.5kV)",
+    "MT_EPR (8 Cu)"
+  ],
+  "countries": [
+    "CO",
+    "MX",
+    "PE",
+    "CL",
+    "EC",
+    "IEC"
+  ],
+  "standards": [
+    "RETIE 2024",
+    "NTC 2050",
+    "NOM-001-SEDE",
+    "CNE",
+    "SEC",
+    "NCh Elec",
+    "NEC 2023",
+    "IEC 60364",
+    "IEC 60502",
+    "IEC 60909",
+    "IEC 60287",
+    "IEC 60071"
+  ],
+  "voltage_levels": [
+    "BT (hasta 600V)",
+    "MT (6.6–34.5 kV)"
+  ],
+  "integration": {
+    "api_url_var": "window.VORYN_API_URL",
+    "fallback_var": "window.DIMELEC_API_URL",
+    "default_url": "http://localhost:8000",
+    "no_conflicts_with": [
+      "MecLine LATAM",
+      "TerraDoc SPT",
+      "Landing Voryn"
+    ]
+  },
+  "mt_validation": {
+    "cases_tested": 12,
+    "inconsistencies": 0,
+    "date": "2026-05-16",
+    "status": "PASSED"
+  }
+}

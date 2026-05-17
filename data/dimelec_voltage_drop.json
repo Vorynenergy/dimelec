@@ -1,0 +1,55 @@
+{
+  "_product": "DimElec LATAM",
+  "_version": "1.0.0",
+  "_formula_trifasico": "ΔV = √3 × I × L × (R·cosφ + X·sinφ)",
+  "_formula_monofasico": "ΔV = 2 × I × L × (R·cosφ + X·sinφ)",
+  "_norma": "IEC 60364 / RETIE / NEC",
+  "limits_by_country": {
+    "CO": {
+      "terminal_pct": 3.0,
+      "feeder_pct": 5.0,
+      "mt_pct": 5.0
+    },
+    "MX": {
+      "terminal_pct": 3.0,
+      "feeder_pct": 5.0,
+      "mt_pct": 5.0
+    },
+    "PE": {
+      "terminal_pct": 2.5,
+      "feeder_pct": 4.0,
+      "mt_pct": 5.0
+    },
+    "CL": {
+      "terminal_pct": 3.0,
+      "feeder_pct": 5.0,
+      "mt_pct": 5.0
+    },
+    "EC": {
+      "terminal_pct": 3.0,
+      "feeder_pct": 5.0,
+      "mt_pct": 5.0
+    },
+    "IEC": {
+      "terminal_pct": 3.0,
+      "feeder_pct": 5.0,
+      "mt_pct": 5.0
+    }
+  },
+  "economic_reference_usd": {
+    "_nota": "Precios referenciales LATAM 2024 para análisis económico conductor",
+    "_unidad_conductor": "USD/kg",
+    "_unidad_energia": "USD/kWh",
+    "cobre_usd_kg": 10.5,
+    "aluminio_usd_kg": 3.2,
+    "energia_usd_kwh": 0.12,
+    "instalacion_usd_m": 15.0,
+    "tasa_descuento_anual": 0.1,
+    "horizonte_anios": 20,
+    "factor_carga": 0.65,
+    "densidades_kg_m3": {
+      "cobre": 8900,
+      "aluminio": 2700
+    }
+  }
+}

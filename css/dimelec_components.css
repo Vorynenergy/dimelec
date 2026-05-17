@@ -1,0 +1,164 @@
+/* ============================================================
+   DimElec LATAM — dimelec_components.css
+   ============================================================ */
+
+/* ── FORM ELEMENTS ───────────────────────────────────────────── */
+.dimelec-form-grid   { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+.dimelec-form-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: .75rem; }
+.dimelec-full        { grid-column: 1 / -1; }
+.dimelec-fg          { display: flex; flex-direction: column; gap: 4px; }
+
+.dimelec-fg label {
+  font-size: 11px; color: var(--dimelec-text2);
+  font-weight: 500;
+  text-transform: uppercase; letter-spacing: .04em;
+}
+
+.dimelec-fg select,
+.dimelec-fg input[type=number],
+.dimelec-fg input[type=text] {
+  background: var(--dimelec-bg3);
+  border: 1px solid var(--dimelec-border);
+  border-radius: var(--dimelec-radius);
+  color: var(--dimelec-text);
+  padding: 7px 10px;
+  font-size: 13px; width: 100%;
+  font-family: inherit;
+  transition: border .15s;
+}
+
+.dimelec-fg select:focus,
+.dimelec-fg input:focus {
+  outline: none;
+  border-color: var(--dimelec-blue);
+  box-shadow: 0 0 0 2px rgba(59,130,246,.15);
+}
+
+.dimelec-fg select option { background: var(--dimelec-bg3); }
+
+.dimelec-check-wrap {
+  display: flex; align-items: center; gap: 8px; padding: .5rem 0;
+}
+.dimelec-check-wrap input[type=checkbox] {
+  width: 16px; height: 16px; accent-color: var(--dimelec-blue);
+}
+.dimelec-check-wrap label {
+  font-size: 13px; text-transform: none; letter-spacing: 0;
+  color: var(--dimelec-text); cursor: pointer;
+}
+
+/* ── BUTTONS ─────────────────────────────────────────────────── */
+.dimelec-btn {
+  padding: 8px 18px;
+  border-radius: var(--dimelec-radius);
+  font-size: 13px; font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--dimelec-border);
+  background: var(--dimelec-bg3);
+  color: var(--dimelec-text);
+  font-family: inherit;
+  transition: all .15s;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+
+.dimelec-btn:hover { background: var(--dimelec-bg4); border-color: var(--dimelec-border2); }
+.dimelec-btn:disabled { opacity: .45; cursor: not-allowed; }
+
+.dimelec-btn.primary { background: var(--dimelec-blue3); color: #fff; border-color: var(--dimelec-blue3); }
+.dimelec-btn.primary:hover { background: var(--dimelec-blue); }
+
+.dimelec-btn.success { background: #065f46; color: #34d399; border-color: #047857; }
+.dimelec-btn.success:hover { background: #047857; }
+
+.dimelec-btn.danger  { background: rgba(239,68,68,.1); color: var(--dimelec-red2); border-color: rgba(239,68,68,.3); }
+.dimelec-btn.warning { background: rgba(245,158,11,.1); color: var(--dimelec-amber2); border-color: rgba(245,158,11,.3); }
+
+.dimelec-btn.sm      { padding: 4px 10px; font-size: 11px; }
+.dimelec-btn.lg      { padding: 10px 24px; font-size: 14px; }
+
+.dimelec-actions {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 1.25rem; padding-top: 1rem;
+  border-top: 1px solid var(--dimelec-border);
+}
+
+/* ── INFO / WARN / ERROR BOXES ───────────────────────────────── */
+.dimelec-info-box {
+  background: rgba(59,130,246,.08);
+  border: 1px solid rgba(59,130,246,.25);
+  border-radius: var(--dimelec-radius);
+  padding: 10px 14px; font-size: 12px; color: #93c5fd;
+  display: flex; gap: 8px; align-items: flex-start; margin: .5rem 0;
+}
+
+.dimelec-warn-box {
+  background: rgba(245,158,11,.08);
+  border: 1px solid rgba(245,158,11,.25);
+  border-radius: var(--dimelec-radius);
+  padding: 10px 14px; font-size: 12px; color: #fcd34d;
+  display: flex; gap: 8px; align-items: flex-start; margin: .5rem 0;
+}
+
+.dimelec-err-box {
+  background: rgba(239,68,68,.08);
+  border: 1px solid rgba(239,68,68,.25);
+  border-radius: var(--dimelec-radius);
+  padding: 10px 14px; font-size: 12px; color: #fca5a5;
+  display: flex; gap: 8px; margin: .5rem 0;
+}
+
+/* ── TABLES ──────────────────────────────────────────────────── */
+.dimelec-tbl-wrap { overflow-x: auto; margin-bottom: .75rem; }
+
+.dimelec-table { width: 100%; border-collapse: collapse; }
+
+.dimelec-table thead th {
+  background: var(--dimelec-bg4);
+  padding: 7px 8px;
+  font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .05em;
+  color: var(--dimelec-text2); text-align: left; white-space: nowrap;
+}
+
+.dimelec-table tbody td {
+  padding: 5px 6px;
+  border-bottom: 1px solid var(--dimelec-border);
+  vertical-align: middle;
+}
+
+.dimelec-table tbody tr:hover td { background: var(--dimelec-bg3); }
+
+.dimelec-table tbody input,
+.dimelec-table tbody select {
+  padding: 3px 6px; font-size: 12px;
+  background: var(--dimelec-bg3);
+  border: 1px solid var(--dimelec-border);
+  border-radius: 6px; color: var(--dimelec-text);
+  width: 100%; min-width: 0;
+}
+
+/* ── CHART CONTAINERS ────────────────────────────────────────── */
+.dimelec-chart-wrap {
+  background: var(--dimelec-bg3);
+  border: 1px solid var(--dimelec-border);
+  border-radius: var(--dimelec-radius2);
+  padding: 1rem; margin-bottom: 1rem;
+}
+
+.dimelec-chart-title {
+  font-size: 12px; font-weight: 600;
+  color: var(--dimelec-text2); margin-bottom: .75rem;
+  text-transform: uppercase; letter-spacing: .05em;
+}
+
+/* ── DATA TABLE (key-value 2-col) ────────────────────────────── */
+.dimelec-kv-table { width: 100%; font-size: 12px; border-collapse: collapse; }
+.dimelec-kv-table tr { border-bottom: 1px solid var(--dimelec-border); }
+.dimelec-kv-table tr:last-child { border: none; }
+.dimelec-kv-table td:first-child {
+  padding: 6px 8px; color: var(--dimelec-text2);
+  font-weight: 500; width: 45%;
+}
+.dimelec-kv-table td:last-child {
+  padding: 6px 8px; color: var(--dimelec-text);
+}

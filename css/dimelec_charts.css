@@ -1,0 +1,39 @@
+/* ============================================================
+   DimElec LATAM — dimelec_charts.css
+   Chart.js theming and containers
+   ============================================================ */
+
+.dimelec-chart-container {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+}
+
+.dimelec-chart-legend {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin-top: .5rem; font-size: 11px; color: var(--dimelec-text2);
+}
+
+.dimelec-chart-legend-item {
+  display: flex; align-items: center; gap: 6px;
+}
+
+.dimelec-chart-legend-dot {
+  width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+}
+
+.dimelec-chart-limit-line {
+  stroke: var(--dimelec-red);
+  stroke-dasharray: 6 3;
+  stroke-width: 1.5;
+}
+
+/* Voltage profile chart */
+.dimelec-profile-ok  { color: var(--dimelec-green2); }
+.dimelec-profile-warn { color: var(--dimelec-amber2); }
+.dimelec-profile-fail { color: var(--dimelec-red2); }
+
+/* Economic comparison bars */
+.dimelec-econ-bar-conductor { background: rgba(59,130,246,.6); }
+.dimelec-econ-bar-install   { background: rgba(16,185,129,.6); }
+.dimelec-econ-bar-losses    { background: rgba(239,68,68,.6); }

@@ -1,0 +1,353 @@
+{
+  "_product": "DimElec LATAM",
+  "_version": "1.0.0",
+  "k_short_circuit": {
+    "_norma": "IEC 60364-5-54 Tabla 54.2 — factor k para verificación térmica cortocircuito",
+    "cobre": {
+      "THHN": {
+        "k": 115,
+        "T_ini_C": 75,
+        "T_fin_C": 150
+      },
+      "THWN": {
+        "k": 115,
+        "T_ini_C": 75,
+        "T_fin_C": 150
+      },
+      "XHHW": {
+        "k": 115,
+        "T_ini_C": 75,
+        "T_fin_C": 150
+      },
+      "XLPE": {
+        "k": 143,
+        "T_ini_C": 90,
+        "T_fin_C": 250
+      },
+      "EPR": {
+        "k": 143,
+        "T_ini_C": 90,
+        "T_fin_C": 250
+      },
+      "tierra": {
+        "k": 115,
+        "T_ini_C": 75,
+        "T_fin_C": 150
+      }
+    },
+    "aluminio": {
+      "THHN": {
+        "k": 74,
+        "T_ini_C": 75,
+        "T_fin_C": 150
+      },
+      "THWN": {
+        "k": 74,
+        "T_ini_C": 75,
+        "T_fin_C": 150
+      },
+      "XLPE": {
+        "k": 94,
+        "T_ini_C": 90,
+        "T_fin_C": 250
+      },
+      "EPR": {
+        "k": 94,
+        "T_ini_C": 90,
+        "T_fin_C": 250
+      },
+      "tierra": {
+        "k": 74,
+        "T_ini_C": 75,
+        "T_fin_C": 150
+      }
+    }
+  },
+  "min_ground_conductor": {
+    "_norma": "NEC Tabla 250.122 / IEC 60364-5-54 Tabla 54.1",
+    "unidad": "AWG",
+    "tabla": [
+      {
+        "proteccion_max_a": 15,
+        "cu_awg": "14 AWG",
+        "al_awg": "12 AWG",
+        "cu_mm2": 2.1,
+        "al_mm2": 3.3
+      },
+      {
+        "proteccion_max_a": 20,
+        "cu_awg": "12 AWG",
+        "al_awg": "10 AWG",
+        "cu_mm2": 3.3,
+        "al_mm2": 5.3
+      },
+      {
+        "proteccion_max_a": 60,
+        "cu_awg": "10 AWG",
+        "al_awg": "8 AWG",
+        "cu_mm2": 5.3,
+        "al_mm2": 8.4
+      },
+      {
+        "proteccion_max_a": 100,
+        "cu_awg": "8 AWG",
+        "al_awg": "6 AWG",
+        "cu_mm2": 8.4,
+        "al_mm2": 13.3
+      },
+      {
+        "proteccion_max_a": 200,
+        "cu_awg": "6 AWG",
+        "al_awg": "4 AWG",
+        "cu_mm2": 13.3,
+        "al_mm2": 21.2
+      },
+      {
+        "proteccion_max_a": 300,
+        "cu_awg": "4 AWG",
+        "al_awg": "2 AWG",
+        "cu_mm2": 21.2,
+        "al_mm2": 33.6
+      },
+      {
+        "proteccion_max_a": 400,
+        "cu_awg": "3 AWG",
+        "al_awg": "1 AWG",
+        "cu_mm2": 26.7,
+        "al_mm2": 42.4
+      },
+      {
+        "proteccion_max_a": 500,
+        "cu_awg": "2 AWG",
+        "al_awg": "1/0 AWG",
+        "cu_mm2": 33.6,
+        "al_mm2": 53.5
+      },
+      {
+        "proteccion_max_a": 800,
+        "cu_awg": "1/0 AWG",
+        "al_awg": "2/0 AWG",
+        "cu_mm2": 53.5,
+        "al_mm2": 67.4
+      },
+      {
+        "proteccion_max_a": 1200,
+        "cu_awg": "2/0 AWG",
+        "al_awg": "4/0 AWG",
+        "cu_mm2": 67.4,
+        "al_mm2": 107.2
+      },
+      {
+        "proteccion_max_a": 1600,
+        "cu_awg": "3/0 AWG",
+        "al_awg": "250 kcmil",
+        "cu_mm2": 85.0,
+        "al_mm2": 126.7
+      },
+      {
+        "proteccion_max_a": 2000,
+        "cu_awg": "4/0 AWG",
+        "al_awg": "350 kcmil",
+        "cu_mm2": 107.2,
+        "al_mm2": 177.3
+      }
+    ]
+  },
+  "clearing_times": {
+    "_nota": "Tiempos típicos de despeje para verificación térmica CC [s]",
+    "MCB_B_hasta_63A": 0.1,
+    "MCB_C_hasta_63A": 0.1,
+    "MCB_D_hasta_63A": 0.1,
+    "MCCB_hasta_250A": 0.05,
+    "MCCB_hasta_630A": 0.08,
+    "MCCB_hasta_1600A": 0.1,
+    "ACB_hasta_4000A": 0.1,
+    "fusible_gG_baja": 0.1,
+    "rele_diferencial": 0.04,
+    "rele_MT_50ms": 0.05,
+    "rele_MT_100ms": 0.1,
+    "reconectador_MT": 0.3,
+    "fusible_MT": 0.1
+  },
+  "interrupting_capacities": {
+    "_norma": "IEC 60947-2 / IEC 60898",
+    "MCB_6kA_residencial": {
+      "Icu": 6,
+      "Ics": 3
+    },
+    "MCB_10kA_comercial": {
+      "Icu": 10,
+      "Ics": 7.5
+    },
+    "MCCB_25kA": {
+      "Icu": 25,
+      "Ics": 18.75
+    },
+    "MCCB_36kA": {
+      "Icu": 36,
+      "Ics": 27
+    },
+    "MCCB_50kA": {
+      "Icu": 50,
+      "Ics": 37.5
+    },
+    "ACB_65kA": {
+      "Icu": 65,
+      "Ics": 65
+    },
+    "fusible_gG_100kA": {
+      "Icu": 100,
+      "Ics": 100
+    }
+  },
+  "bil_table": {
+    "_norma": "IEC 60071-1 / IEEE Std 1313.1",
+    "tabla": [
+      {
+        "v_max_kv": 7.2,
+        "bil_kv": 60,
+        "descripcion": "Clase 6.6 kV"
+      },
+      {
+        "v_max_kv": 12.0,
+        "bil_kv": 75,
+        "descripcion": "Clase 10–12 kV"
+      },
+      {
+        "v_max_kv": 17.5,
+        "bil_kv": 95,
+        "descripcion": "Clase 13.2–13.8 kV"
+      },
+      {
+        "v_max_kv": 24.0,
+        "bil_kv": 125,
+        "descripcion": "Clase 22–23 kV"
+      },
+      {
+        "v_max_kv": 36.0,
+        "bil_kv": 170,
+        "descripcion": "Clase 33–34.5 kV"
+      },
+      {
+        "v_max_kv": 52.0,
+        "bil_kv": 250,
+        "descripcion": "Clase 45 kV"
+      },
+      {
+        "v_max_kv": 72.5,
+        "bil_kv": 325,
+        "descripcion": "Clase 66 kV"
+      }
+    ]
+  },
+  "transformers": {
+    "_norma": "IEEE C57.12.00 / IEC 60076",
+    "tabla": [
+      {
+        "kva": 15,
+        "z_pct": 3.0,
+        "r_pct": 2.0,
+        "x_pct": 2.24,
+        "xr": 1.12
+      },
+      {
+        "kva": 25,
+        "z_pct": 3.0,
+        "r_pct": 1.9,
+        "x_pct": 2.33,
+        "xr": 1.23
+      },
+      {
+        "kva": 37.5,
+        "z_pct": 3.0,
+        "r_pct": 1.7,
+        "x_pct": 2.49,
+        "xr": 1.46
+      },
+      {
+        "kva": 50,
+        "z_pct": 3.5,
+        "r_pct": 1.6,
+        "x_pct": 3.12,
+        "xr": 1.95
+      },
+      {
+        "kva": 75,
+        "z_pct": 3.5,
+        "r_pct": 1.4,
+        "x_pct": 3.21,
+        "xr": 2.29
+      },
+      {
+        "kva": 100,
+        "z_pct": 3.5,
+        "r_pct": 1.2,
+        "x_pct": 3.29,
+        "xr": 2.74
+      },
+      {
+        "kva": 167,
+        "z_pct": 4.0,
+        "r_pct": 1.0,
+        "x_pct": 3.87,
+        "xr": 3.87
+      },
+      {
+        "kva": 250,
+        "z_pct": 4.5,
+        "r_pct": 0.9,
+        "x_pct": 4.41,
+        "xr": 4.9
+      },
+      {
+        "kva": 333,
+        "z_pct": 4.5,
+        "r_pct": 0.85,
+        "x_pct": 4.42,
+        "xr": 5.2
+      },
+      {
+        "kva": 500,
+        "z_pct": 5.0,
+        "r_pct": 0.8,
+        "x_pct": 4.94,
+        "xr": 6.17
+      },
+      {
+        "kva": 750,
+        "z_pct": 5.75,
+        "r_pct": 0.7,
+        "x_pct": 5.71,
+        "xr": 8.16
+      },
+      {
+        "kva": 1000,
+        "z_pct": 5.75,
+        "r_pct": 0.6,
+        "x_pct": 5.72,
+        "xr": 9.53
+      },
+      {
+        "kva": 1500,
+        "z_pct": 6.0,
+        "r_pct": 0.5,
+        "x_pct": 5.98,
+        "xr": 11.96
+      },
+      {
+        "kva": 2000,
+        "z_pct": 6.0,
+        "r_pct": 0.5,
+        "x_pct": 5.98,
+        "xr": 11.96
+      },
+      {
+        "kva": 2500,
+        "z_pct": 6.25,
+        "r_pct": 0.45,
+        "x_pct": 6.23,
+        "xr": 13.84
+      }
+    ]
+  }
+}

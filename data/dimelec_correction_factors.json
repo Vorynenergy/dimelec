@@ -1,0 +1,108 @@
+{
+  "_product": "DimElec LATAM",
+  "_version": "1.0.0",
+  "temperature_75C": {
+    "_norma": "NEC Tabla 310.15(B)(2)(a) — conductor THHN/THWN 75°C, base 30°C",
+    "tabla": {
+      "10": 1.2,
+      "15": 1.15,
+      "20": 1.11,
+      "25": 1.05,
+      "30": 1.0,
+      "35": 0.94,
+      "40": 0.88,
+      "45": 0.82,
+      "50": 0.75,
+      "55": 0.67,
+      "60": 0.58
+    }
+  },
+  "grouping": {
+    "_norma": "NEC Tabla 310.15(B)(3)(a) / IEC 60364-5-52 Tabla B.52.17",
+    "tabla": {
+      "1": 1.0,
+      "2": 0.8,
+      "3": 0.7,
+      "4": 0.65,
+      "5": 0.6,
+      "6": 0.57,
+      "7": 0.54,
+      "8": 0.52,
+      "9": 0.5,
+      "10": 0.5,
+      "12": 0.45,
+      "16": 0.41,
+      "20": 0.38
+    }
+  },
+  "installation_method": {
+    "_norma": "IEC 60364-5-52 Tabla B.52.2 / NEC 310.15",
+    "tuberia": {
+      "fr": 1.0,
+      "fx": 1.0,
+      "desc": "Conductores en tubería conduit"
+    },
+    "bandeja_perforada": {
+      "fr": 1.0,
+      "fx": 1.0,
+      "desc": "Bandeja portacables perforada"
+    },
+    "bandeja_cerrada": {
+      "fr": 0.87,
+      "fx": 0.87,
+      "desc": "Bandeja portacables cerrada"
+    },
+    "enterrado_directo": {
+      "fr": 0.9,
+      "fx": 0.9,
+      "desc": "Enterrado directamente en suelo"
+    },
+    "ducto_banco": {
+      "fr": 0.8,
+      "fx": 0.8,
+      "desc": "Ducto banco subterráneo"
+    },
+    "aereo": {
+      "fr": 1.0,
+      "fx": 1.0,
+      "desc": "Instalación aérea al aire"
+    },
+    "superficial": {
+      "fr": 1.0,
+      "fx": 1.0,
+      "desc": "Sobre superficie, sin exposición solar"
+    }
+  },
+  "neutral_loaded": {
+    "_norma": "NEC 310.15(B)(5) — reducción por neutro cargado con armónicos triplen",
+    "_nota": "Factor aplicado cuando el neutro conduce corriente mayor que las fases (armónicos 3°, 9°, etc.)",
+    "sin_neutro_cargado": 1.0,
+    "con_neutro_cargado": 0.8,
+    "cargas_electronicas_thd_20pct": 0.85,
+    "cargas_electronicas_thd_50pct": 0.7
+  },
+  "harmonics_thd": {
+    "_norma": "IEC 61000-3-2 / NEC 310.15(B)(5)",
+    "thd_0_20pct": {
+      "multiplicador_neutro": 1.0,
+      "reduccion_ampacidad": 1.0
+    },
+    "thd_20_33pct": {
+      "multiplicador_neutro": 1.35,
+      "reduccion_ampacidad": 0.86
+    },
+    "thd_33_45pct": {
+      "multiplicador_neutro": 1.71,
+      "reduccion_ampacidad": 0.75
+    },
+    "thd_45_60pct": {
+      "multiplicador_neutro": 2.16,
+      "reduccion_ampacidad": 0.65
+    }
+  },
+  "alpha_resistivity": {
+    "_nota": "Coeficiente temperatura resistividad eléctrica [1/°C] — IEC 60228",
+    "cobre": 0.00393,
+    "aluminio": 0.00403
+  }
+}

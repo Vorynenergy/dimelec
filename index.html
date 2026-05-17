@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>DimElec LATAM — Agente de Dimensionamiento Eléctrico BT/MT</title>
+<meta name="description" content="Plataforma profesional de dimensionamiento eléctrico BT/MT para Latinoamérica. RETIE, NEC, IEC 60364, IEC 60502."/>
+<meta name="product" content="DimElec LATAM"/>
+<meta name="prefix" content="dimelec_"/>
+<meta name="platform" content="Voryn Energy"/>
+
+<!-- ── DEPENDENCIAS EXTERNAS ─────────────────────────────────── -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<!-- jsPDF + html2canvas: PENDIENTE IMPLEMENTACIÓN
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+-->
+<!-- SheetJS XLSX: PENDIENTE IMPLEMENTACIÓN
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+-->
+
+<!-- ── ESTILOS DimElec ────────────────────────────────────────── -->
+<link rel="stylesheet" href="css/dimelec_main.css"/>
+<link rel="stylesheet" href="css/dimelec_components.css"/>
+<link rel="stylesheet" href="css/dimelec_responsive.css"/>
+<link rel="stylesheet" href="css/dimelec_charts.css"/>
+<link rel="stylesheet" href="css/dimelec_print.css"/>
+</head>
+
+<body class="dimelec-app">
+
+<!-- ── NAVEGACIÓN ────────────────────────────────────────────── -->
+<nav class="dimelec-nav">
+  <div class="dimelec-nav-logo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+    </svg>
+    DimElec LATAM
+    <span class="dimelec-nav-logo-badge">v1.0.0</span>
+  </div>
+  <div class="dimelec-nav-sep"></div>
+  <div class="dimelec-nav-tag" id="dimelec-nav-pais">Colombia — RETIE 2024</div>
+  <div class="dimelec-nav-tag" id="dimelec-nav-nivel">BT</div>
+</nav>
+
+<!-- ── LAYOUT ─────────────────────────────────────────────────── -->
+<div class="dimelec-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="dimelec-sidebar">
+    <div class="dimelec-sidebar-section">
+      <div class="dimelec-sidebar-label">Configuración</div>
+      <div class="dimelec-step-item" id="dimelec-sn-0" onclick="DimelecApp.goStep(0)">
+        <div class="dimelec-step-num">1</div>
+        <div class="dimelec-step-name">País y normativa</div>
+      </div>
+      <div class="dimelec-step-item" id="dimelec-sn-1" onclick="DimelecApp.goStep(1)">
+        <div class="dimelec-step-num">2</div>
+        <div class="dimelec-step-name">Sistema eléctrico</div>
+      </div>
+      <div class="dimelec-step-item" id="dimelec-sn-2" onclick="DimelecApp.goStep(2)">
+        <div class="dimelec-step-num">3</div>
+        <div class="dimelec-step-name">Conductor</div>
+      </div>
+    </div>
+    <div class="dimelec-sidebar-section">
+      <div class="dimelec-sidebar-label">Cálculo</div>
+      <div class="dimelec-step-item" id="dimelec-sn-3" onclick="DimelecApp.goStep(3)">
+        <div class="dimelec-step-num">4</div>
+        <div class="dimelec-step-name">Cargas</div>
+      </div>
+      <div class="dimelec-step-item" id="dimelec-sn-4" onclick="DimelecApp.goStep(4)">
+        <div class="dimelec-step-num">5</div>
+        <div class="dimelec-step-name">Parámetros avanzados</div>
+      </div>
+    </div>
+    <div class="dimelec-sidebar-section">
+      <div class="dimelec-sidebar-label">Resultados</div>
+      <div class="dimelec-step-item" id="dimelec-sn-5" onclick="DimelecApp.goStep(5)">
+        <div class="dimelec-step-num">6</div>
+        <div class="dimelec-step-name">Resultados</div>
+      </div>
+      <div class="dimelec-step-item" id="dimelec-sn-6" onclick="DimelecApp.goStep(6)">
+        <div class="dimelec-step-num">7</div>
+        <div class="dimelec-step-name">Gráficas</div>
+      </div>
+      <div class="dimelec-step-item" id="dimelec-sn-7" onclick="DimelecApp.goStep(7)">
+        <div class="dimelec-step-num">8</div>
+        <div class="dimelec-step-name">Trazabilidad</div>
+      </div>
+      <div class="dimelec-step-item" id="dimelec-sn-8" onclick="DimelecApp.goStep(8)">
+        <div class="dimelec-step-num">9</div>
+        <div class="dimelec-step-name">Memoria / Exportar</div>
+      </div>
+    </div>
+    <div class="dimelec-sidebar-footer">
+      <strong style="color:var(--dimelec-text2)">Backend:</strong> localhost:8000<br>
+      POST /api/v1/dimensionar-bt<br>
+      POST /api/v1/dimensionar-mt<br>
+      <br>Configura: <code>window.VORYN_API_URL</code>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="dimelec-main" id="dimelec-main-content">
+    <div class="dimelec-loading">
+      <div class="dimelec-spinner"></div>
+      <span>Cargando DimElec LATAM...</span>
+    </div>
+  </main>
+
+</div>
+
+<!-- ── MÓDULOS DimElec (orden de dependencias) ───────────────── -->
+<script src="js/dimelec_standards.js"></script>
+<script src="js/dimelec_calculations.js"></script>
+<script src="js/dimelec_conductor_selection.js"></script>
+<script src="js/dimelec_validations.js"></script>
+<script src="js/dimelec_charts.js"></script>
+<script src="js/dimelec_exports.js"></script>
+<script src="js/dimelec_backend.js"></script>
+<script src="js/dimelec_modals.js"></script>
+<script src="js/dimelec_app.js"></script>
+<script src="js/dimelec_ui.js"></script>
+
+<!-- ── INICIALIZACIÓN ─────────────────────────────────────────── -->
+<script>
+  // Configuración de URL API para integración Voryn Energy
+  // Descomentar y configurar en producción:
+  // window.VORYN_API_URL = 'https://api.vorynenergy.com/dimelec';
+  // window.DIMELEC_API_URL = 'https://dimelec.vorynenergy.com';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    DimelecUI.render();
+    DimelecBackend.checkHealth().then(online => {
+      if (!online) console.info('[DimElec] Backend no disponible — modo offline activo');
+    });
+  });
+</script>
+
+</body>
+</html>
